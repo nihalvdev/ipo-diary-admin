@@ -31,7 +31,7 @@ export default function AddIpo() {
         listingDate: '',
         price: '',
         lotSize: '',
-        minInvestament: '',
+        minInvestment: '',
         issueSize: '',
         about: ''
     });
@@ -71,7 +71,7 @@ export default function AddIpo() {
 
             submitData.append('price', formData.price);
             submitData.append('lotSize', formData.lotSize);
-            submitData.append('minInvestament', formData.minInvestament);
+            submitData.append('minInvestment', formData.minInvestment);
             submitData.append('issueSize', formData.issueSize);
             submitData.append('about', formData.about);
 
@@ -292,8 +292,8 @@ export default function AddIpo() {
                                         fullWidth
                                         label="Minimum Investment"
                                         type="number"
-                                        name="minInvestament"
-                                        value={formData.minInvestament}
+                                        name="minInvestment"
+                                        value={formData.minInvestment}
                                         onChange={handleChange}
                                     />
                                 </Grid>

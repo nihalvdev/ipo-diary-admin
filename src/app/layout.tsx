@@ -6,6 +6,9 @@ import { NextAuthProvider } from "@/context/NextAuthProvider";
 export const metadata: Metadata = {
   title: "IPO Diary Admin",
   description: "IPO Diary Admin using Vuexy design",
+  icons: {
+    icon: '/logo.png'
+  }
 };
 
 export default function RootLayout({

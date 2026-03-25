@@ -23,7 +23,7 @@ import {
     MenuItem,
     CircularProgress
 } from "@mui/material";
-import { SearchOutlined, VisibilityOutlined } from '@mui/icons-material';
+import { AccountBox, AccountTree, Android, Apple, SearchOutlined, VisibilityOutlined } from '@mui/icons-material';
 import { useState, useEffect, useCallback } from 'react';
 import { apiService } from '@/api/apiService';
 
@@ -100,7 +100,7 @@ export default function Users() {
         <Box sx={{ p: 0 }}>
             <Box sx={{ mb: 3, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <Typography variant="h4" sx={{ fontWeight: 700, display: 'flex', alignItems: 'center' }}>
-                    <i className='tabler-users text-3xl mr-2 text-[inherit]' />
+                    <i className='tabler-users text-3xl mr-2 text-inherit' />
                     Users Management
                 </Typography>
             </Box>
@@ -131,7 +131,8 @@ export default function Users() {
                                             color: 'primary.main'
                                         }}
                                     >
-                                        <i className='tabler-user text-[26px]' />
+                                        {/* <i className='tabler-user text-[26px]' /> */}
+                                        <AccountBox/>
                                     </Avatar>
                                     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                                         <Typography variant='h6' sx={{ fontWeight: 600 }}>{stats.totalUsers}</Typography>
@@ -152,7 +153,8 @@ export default function Users() {
                                             color: 'success.main'
                                         }}
                                     >
-                                        <i className='tabler-brand-android text-[26px]' />
+                                        {/* <i className='tabler-brand-android text-[26px]' /> */}
+                                        <Android/>
                                     </Avatar>
                                     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                                         <Typography variant='h6' sx={{ fontWeight: 600 }}>{stats.androidUsers}</Typography>
@@ -173,7 +175,8 @@ export default function Users() {
                                             color: 'info.main'
                                         }}
                                     >
-                                        <i className='tabler-brand-apple text-[26px]' />
+                                        {/* <i className='tabler-brand-apple text-[26px]' /> */}
+                                        <Apple/>
                                     </Avatar>
                                     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                                         <Typography variant='h6' sx={{ fontWeight: 600 }}>{stats.iosUsers}</Typography>
@@ -194,7 +197,8 @@ export default function Users() {
                                             color: 'warning.main'
                                         }}
                                     >
-                                        <i className='tabler-file-analytics text-[26px]' />
+                                        {/* <i className='tabler-file-analytics text-[26px]' /> */}
+                                        <AccountTree/>
                                     </Avatar>
                                     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                                         <Typography variant='h6' sx={{ fontWeight: 600 }}>{stats.totalApplications}</Typography>

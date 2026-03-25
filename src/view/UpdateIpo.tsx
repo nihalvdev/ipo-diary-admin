@@ -36,7 +36,7 @@ export default function UpdateIpo() {
         listingDate: '',
         price: '',
         lotSize: '',
-        minInvestament: '',
+        minInvestment: '',
         issueSize: '',
         about: ''
     });
@@ -60,7 +60,7 @@ export default function UpdateIpo() {
                         listingDate: ipo.listingDate ? ipo.listingDate.split('T')[0] : '',
                         price: ipo.price || '',
                         lotSize: ipo.lotSize ? String(ipo.lotSize) : '',
-                        minInvestament: ipo.minInvestament ? String(ipo.minInvestament) : '',
+                        minInvestment: ipo.minInvestment ? String(ipo.minInvestment) : '',
                         issueSize: ipo.issueSize || '',
                         about: ipo.about || ''
                     });
@@ -112,7 +112,7 @@ export default function UpdateIpo() {
 
             submitData.append('price', formData.price);
             submitData.append('lotSize', formData.lotSize);
-            submitData.append('minInvestament', formData.minInvestament);
+            submitData.append('minInvestment', formData.minInvestment);
             submitData.append('issueSize', formData.issueSize);
             submitData.append('about', formData.about);
 
@@ -343,8 +343,8 @@ export default function UpdateIpo() {
                                         fullWidth
                                         label="Minimum Investment"
                                         type="number"
-                                        name="minInvestament"
-                                        value={formData.minInvestament}
+                                        name="minInvestment"
+                                        value={formData.minInvestment}
                                         onChange={handleChange}
                                     />
                                 </Grid>

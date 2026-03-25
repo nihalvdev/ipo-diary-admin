@@ -47,7 +47,7 @@ interface Ipo {
     listingDate: string;
     price: string;
     lotSize: number;
-    minInvestament: number;
+    minInvestment: number;
     issueSize: string;
     about: string;
     createdAt: string;

@@ -2,7 +2,8 @@ export const API_ROUTES = {
     AUTH: {
         ADMIN_LOGIN: '/auth/admin/login',
         ADMIN_LOGOUT: '/auth/admin/logout',
-        GET_ME: '/auth/admin/me'
+        GET_ME: '/auth/admin/me',
+        FEEDBACK: '/feedback/get'
     },
     USERS: {
         GET_STATS: '/admin/stats',

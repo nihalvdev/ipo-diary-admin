@@ -2,8 +2,8 @@
 
 import * as React from 'react';
 
-import { styled, Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography, Collapse, useTheme, alpha } from '@mui/material';
-import { DashboardOutlined, ListAltOutlined, PeopleOutlined, SettingsOutlined, ExpandLess, ExpandMore, CircleOutlined } from '@mui/icons-material';
+import { styled, Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Collapse, useTheme, alpha } from '@mui/material';
+import { DashboardOutlined, ListAltOutlined, PeopleOutlined, ExpandLess, ExpandMore, CircleOutlined, FeedbackOutlined, AddCircleOutlineOutlined } from '@mui/icons-material';
 import Logo from '@/components/layout/shared/Logo';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -134,7 +134,7 @@ const NavSubItem = ({ label, href }: { label: string, href: string }) => {
                 href={href}
                 sx={{
                     py: '4px',
-                    px: '12px',
+                    px: 6,
                     borderRadius: '6px',
                     backgroundColor: 'transparent',
                     color: active ? 'primary.main' : 'text.secondary',
@@ -179,14 +179,20 @@ export default function Sidebar() {
 
                     <NavItem icon={<PeopleOutlined />} label="Users" href="/users" />
 
-                    <NavGroup
+                    <NavItem icon={<FeedbackOutlined />} label="Feedback" href="/feedback" />
+
+                    <NavItem icon={<ListAltOutlined />} label="IPO List" href="/ipo-list" />
+
+                    <NavItem icon={<AddCircleOutlineOutlined />} label="Add IPO" href="/add-ipo" />
+
+                    {/* <NavGroup
                         icon={<ListAltOutlined />}
                         label="IPO"
                         activeCondition={pathname.includes('ipo')}
                     >
                         <NavSubItem label="IPO List" href="/ipo-list" />
                         <NavSubItem label="Add IPO" href="/add-ipo" />
-                    </NavGroup>
+                    </NavGroup> */}
 
 
                     {/* <NavItem icon={<SettingsOutlined />} label="Settings" href="/settings" /> */}

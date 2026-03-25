@@ -15,6 +15,9 @@ export const apiService = {
       }
     }),
 
+  //Feedback
+  getFeedback: () => api.get(API_ROUTES.AUTH.FEEDBACK),
+
   // IPOs
   getAllIpos: (params: { page: number; limit: number; filter: string }) =>
     api.get(API_ROUTES.IPOS.GET_ALL(params.filter), {

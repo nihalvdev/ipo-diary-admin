@@ -72,7 +72,7 @@ export default function UserDropdown() {
             >
                 <Avatar
                     alt="User Avatar"
-                    src="https://raw.githubusercontent.com/themeselection/vuexy-nextjs-admin-template/main/public/images/avatars/1.png"
+                    src="/logo.png"
                     onClick={handleDropdownOpen}
                     sx={{ width: 38, height: 38 }}
                 />
@@ -90,15 +90,15 @@ export default function UserDropdown() {
                         <Paper sx={{ width: 230, mt: 1, boxShadow: '0 4px 18px 0 rgba(47, 43, 61, 0.1)' }}>
                             <ClickAwayListener onClickAway={handleDropdownClose}>
                                 <MenuList sx={{ p: 0 }}>
-                                    <Box sx={{ py: 2, px: 4 }}>
+                                    <Box sx={{ py: 1, px: 2 }}>
                                         <Box sx={{ display: 'flex', alignItems: 'center' }}>
                                             <Avatar
                                                 alt="User Avatar"
-                                                src="https://raw.githubusercontent.com/themeselection/vuexy-nextjs-admin-template/main/public/images/avatars/1.png"
+                                                src="/logo.png"
                                                 sx={{ width: 38, height: 38, mr: 3 }}
                                             />
                                             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                                                <Typography sx={{ fontWeight: 500 }}>John Doe</Typography>
+                                                <Typography sx={{ fontWeight: 500 }}>Nihal Makwana</Typography>
                                                 <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                                                     Admin
                                                 </Typography>
@@ -110,10 +110,10 @@ export default function UserDropdown() {
                                         <PersonOutline sx={{ mr: 3 }} />
                                         <Typography>My Profile</Typography>
                                     </MenuItem> */}
-                                    <MenuItem sx={{ py: 2 }} onClick={(e) => handleDropdownClose(e as any, '/settings')}>
+                                    {/* <MenuItem sx={{ py: 2 }} onClick={(e) => handleDropdownClose(e as any, '/settings')}>
                                         <SettingsOutlined sx={{ mr: 3 }} />
                                         <Typography>Settings</Typography>
-                                    </MenuItem>
+                                    </MenuItem> */}
                                     {/* <MenuItem sx={{ py: 2 }} onClick={(e) => handleDropdownClose(e as any, '/faq')}>
                                         <HelpOutline sx={{ mr: 3 }} />
                                         <Typography>FAQ</Typography>
