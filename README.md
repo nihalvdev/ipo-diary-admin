@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IPO Diary Admin Dashboard
+
+IPO Diary Admin is a web-based administration dashboard for managing IPO information and monitoring users and feedback for the IPO Diary application.
+
+## Features
+
+- Admin login and protected dashboard routes
+- View IPO records with pagination and issue-type filtering
+- Add new IPO details
+- Update existing IPO details
+- Delete IPO records
+- View users and application/device statistics
+- View and search user feedback
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Material UI
+- Tailwind CSS
+- NextAuth.js
+- Axios
+- React Hot Toast
+
+## Requirements
+
+- Node.js
+- npm
+- Access to the IPO Diary backend API
+- Admin login credentials
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   git clone https://github.com/nihalvdev/ipo-diary-admin.git
+   cd ipo-diary-admin
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Create a `.env.local` file in the project root:
 
-## Learn More
+   ```env
+   NEXT_PUBLIC_API_URL=your_backend_api_url
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+   Replace the value with the base URL of the IPO Diary backend API.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Start the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. Open [http://localhost:3000](http://localhost:3000).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Available Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm run start` | Start the production server |
+| `npm run lint` | Run ESLint |
+
+## Backend
+
+The dashboard uses the IPO Diary backend API for authentication and data operations, including IPO management, user statistics, user listings, and feedback. The backend is maintained separately from this repository.
+
+## Notes
+
+You must have a valid admin account and a running backend API to use the dashboard features.
